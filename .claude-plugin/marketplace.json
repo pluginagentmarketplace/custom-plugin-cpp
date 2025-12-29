@@ -1,0 +1,15 @@
+{
+  "name": "pluginagentmarketplace-cpp",
+  "owner": {
+    "name": "Plugin Agent Marketplace",
+    "email": "pluginagentmarketplace@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "cpp",
+      "source": "./",
+      "description": "Claude Code plugin for cpp development",
+      "version": "1.0.0"
+    }
+  ]
+}

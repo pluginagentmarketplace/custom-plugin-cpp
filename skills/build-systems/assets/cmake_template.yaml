@@ -1,0 +1,48 @@
+# CMake Project Template Configuration
+# Version: 1.0.0
+
+cmake:
+  minimum_version: "3.20"
+  standards:
+    cxx: 20
+    c: 17
+
+project:
+  type: "executable"  # or "library"
+  structure:
+    - src/
+    - include/
+    - tests/
+    - cmake/
+
+dependencies:
+  package_managers:
+    conan:
+      enabled: true
+      profile: "default"
+    vcpkg:
+      enabled: false
+      triplet: "x64-linux"
+
+  find_package:
+    - name: "Threads"
+      required: true
+    - name: "Boost"
+      components: ["filesystem", "system"]
+
+compiler_flags:
+  gcc:
+    debug: ["-g", "-O0", "-Wall", "-Wextra", "-Wpedantic"]
+    release: ["-O3", "-DNDEBUG", "-march=native"]
+
+  clang:
+    debug: ["-g", "-O0", "-Wall", "-Wextra"]
+    release: ["-O3", "-DNDEBUG"]
+
+  msvc:
+    debug: ["/Zi", "/Od", "/W4"]
+    release: ["/O2", "/DNDEBUG"]
+
+testing:
+  framework: "GoogleTest"
+  coverage: true

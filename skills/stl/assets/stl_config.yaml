@@ -1,0 +1,32 @@
+# STL Configuration
+# Version: 1.0.0
+
+containers:
+  sequence:
+    vector: {access: "O(1)", insert: "O(n)", default: true}
+    deque: {access: "O(1)", insert: "O(1) ends"}
+    list: {access: "O(n)", insert: "O(1)"}
+    array: {access: "O(1)", fixed_size: true}
+    forward_list: {access: "O(n)", insert: "O(1)"}
+
+  associative:
+    map: {lookup: "O(log n)", ordered: true}
+    set: {lookup: "O(log n)", ordered: true}
+    multimap: {lookup: "O(log n)", duplicates: true}
+    multiset: {lookup: "O(log n)", duplicates: true}
+
+  unordered:
+    unordered_map: {lookup: "O(1)", ordered: false}
+    unordered_set: {lookup: "O(1)", ordered: false}
+
+  adapters:
+    - stack
+    - queue
+    - priority_queue
+
+algorithms:
+  non_modifying: [find, count, for_each, all_of, any_of, none_of]
+  modifying: [copy, transform, fill, replace, remove]
+  sorting: [sort, stable_sort, partial_sort, nth_element]
+  searching: [binary_search, lower_bound, upper_bound]
+  numeric: [accumulate, inner_product, partial_sum]

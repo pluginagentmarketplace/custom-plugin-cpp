@@ -1,0 +1,26 @@
+{
+  "name": "cpp",
+  "version": "1.0.0",
+  "description": "Modern C++ development with focus on C++11/14/17/20/23, memory management, STL, and performance optimization",
+  "author": {
+    "name": "Plugin Agent Marketplace",
+    "email": "pluginagentmarketplace@gmail.com"
+  },
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-cpp",
+  "agents": [
+    "./agents/01-modern-cpp-expert.md",
+    "./agents/02-memory-specialist.md",
+    "./agents/03-stl-master.md",
+    "./agents/04-build-engineer.md",
+    "./agents/05-performance-optimizer.md"
+  ],
+  "skills": [
+    "./skills/modern-cpp/SKILL.md",
+    "./skills/memory-management/SKILL.md",
+    "./skills/stl/SKILL.md",
+    "./skills/build-systems/SKILL.md",
+    "./skills/performance/SKILL.md"
+  ],
+  "commands": [],
+  "license": "SEE LICENSE IN LICENSE"
+}
