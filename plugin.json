@@ -1,0 +1,263 @@
+{
+  "$schema": "https://sasmp.org/schemas/plugin/v1.3.0",
+  "name": "custom-plugin-cpp",
+  "version": "3.0.0",
+  "description": "Production-grade C++ development plugin with comprehensive agent-skill architecture",
+  "author": "Dr. Umit Kacar & Muhsin Elcicek",
+  "license": "Proprietary",
+  "sasmp_version": "1.3.0",
+  "eqhm_compliant": true,
+  "last_updated": "2025-12-30",
+
+  "agents": {
+    "count": 9,
+    "definitions": [
+      {
+        "id": "modern-cpp-expert",
+        "file": "agents/01-modern-cpp-expert.md",
+        "version": "3.0.0",
+        "primary_skills": ["modern-cpp", "templates", "concurrency"],
+        "model": "claude-sonnet-4-20250514"
+      },
+      {
+        "id": "memory-specialist",
+        "file": "agents/02-memory-specialist.md",
+        "version": "3.0.0",
+        "primary_skills": ["memory-management"],
+        "model": "claude-sonnet-4-20250514"
+      },
+      {
+        "id": "stl-master",
+        "file": "agents/03-stl-master.md",
+        "version": "3.0.0",
+        "primary_skills": ["stl"],
+        "model": "claude-sonnet-4-20250514"
+      },
+      {
+        "id": "build-engineer",
+        "file": "agents/04-build-engineer.md",
+        "version": "3.0.0",
+        "primary_skills": ["build-systems"],
+        "model": "claude-sonnet-4-20250514"
+      },
+      {
+        "id": "performance-optimizer",
+        "file": "agents/05-performance-optimizer.md",
+        "version": "3.0.0",
+        "primary_skills": ["performance"],
+        "model": "claude-sonnet-4-20250514"
+      },
+      {
+        "id": "cpp-fundamentals-agent",
+        "file": "agents/cpp-fundamentals-agent.md",
+        "version": "3.0.0",
+        "primary_skills": ["cpp-basics"],
+        "model": "claude-sonnet-4-20250514"
+      },
+      {
+        "id": "cpp-oop-agent",
+        "file": "agents/cpp-oop-agent.md",
+        "version": "3.0.0",
+        "primary_skills": ["oop-patterns"],
+        "model": "claude-sonnet-4-20250514"
+      },
+      {
+        "id": "cpp-algorithms-agent",
+        "file": "agents/cpp-algorithms-agent.md",
+        "version": "3.0.0",
+        "primary_skills": ["algorithms"],
+        "model": "claude-sonnet-4-20250514"
+      },
+      {
+        "id": "cpp-debugger-agent",
+        "file": "agents/cpp-debugger-agent.md",
+        "version": "3.0.0",
+        "primary_skills": ["debugging", "testing"],
+        "model": "claude-sonnet-4-20250514"
+      }
+    ]
+  },
+
+  "skills": {
+    "count": 12,
+    "note": "All skills with valid agent bonds",
+    "definitions": [
+      {
+        "id": "cpp-basics",
+        "file": "skills/cpp-basics/SKILL.md",
+        "version": "3.0.0",
+        "bonded_agent": "cpp-fundamentals-agent",
+        "category": "fundamentals"
+      },
+      {
+        "id": "oop-patterns",
+        "file": "skills/oop-patterns/SKILL.md",
+        "version": "3.0.0",
+        "bonded_agent": "cpp-oop-agent",
+        "category": "design-patterns"
+      },
+      {
+        "id": "memory-management",
+        "file": "skills/memory-management/SKILL.md",
+        "version": "3.0.0",
+        "bonded_agent": "memory-specialist",
+        "category": "core"
+      },
+      {
+        "id": "stl",
+        "file": "skills/stl/SKILL.md",
+        "version": "3.0.0",
+        "bonded_agent": "stl-master",
+        "category": "standard-library"
+      },
+      {
+        "id": "algorithms",
+        "file": "skills/algorithms/SKILL.md",
+        "version": "3.0.0",
+        "bonded_agent": "cpp-algorithms-agent",
+        "category": "algorithms"
+      },
+      {
+        "id": "modern-cpp",
+        "file": "skills/modern-cpp/SKILL.md",
+        "version": "3.0.0",
+        "bonded_agent": "modern-cpp-expert",
+        "category": "modern-features"
+      },
+      {
+        "id": "build-systems",
+        "file": "skills/build-systems/SKILL.md",
+        "version": "3.0.0",
+        "bonded_agent": "build-engineer",
+        "category": "tooling"
+      },
+      {
+        "id": "performance",
+        "file": "skills/performance/SKILL.md",
+        "version": "3.0.0",
+        "bonded_agent": "performance-optimizer",
+        "category": "optimization"
+      },
+      {
+        "id": "debugging",
+        "file": "skills/debugging/SKILL.md",
+        "version": "3.0.0",
+        "bonded_agent": "cpp-debugger-agent",
+        "category": "tooling"
+      },
+      {
+        "id": "concurrency",
+        "file": "skills/concurrency/SKILL.md",
+        "version": "3.0.0",
+        "bonded_agent": "modern-cpp-expert",
+        "category": "advanced"
+      },
+      {
+        "id": "templates",
+        "file": "skills/templates/SKILL.md",
+        "version": "3.0.0",
+        "bonded_agent": "modern-cpp-expert",
+        "category": "advanced"
+      },
+      {
+        "id": "testing",
+        "file": "skills/testing/SKILL.md",
+        "version": "3.0.0",
+        "bonded_agent": "cpp-debugger-agent",
+        "category": "quality-assurance"
+      }
+    ]
+  },
+
+  "commands": {
+    "count": 6,
+    "definitions": [
+      {
+        "id": "cpp-new",
+        "file": "commands/cpp-new.md",
+        "version": "3.0.0",
+        "category": "project",
+        "routes_to": "build-engineer"
+      },
+      {
+        "id": "cpp-learn",
+        "file": "commands/cpp-learn.md",
+        "version": "3.0.0",
+        "category": "learning",
+        "routes_to": "cpp-fundamentals-agent"
+      },
+      {
+        "id": "cpp-debug",
+        "file": "commands/cpp-debug.md",
+        "version": "3.0.0",
+        "category": "development",
+        "routes_to": "cpp-debugger-agent"
+      },
+      {
+        "id": "cpp-optimize",
+        "file": "commands/cpp-optimize.md",
+        "version": "3.0.0",
+        "category": "development",
+        "routes_to": "performance-optimizer"
+      },
+      {
+        "id": "cpp-practice",
+        "file": "commands/cpp-practice.md",
+        "version": "3.0.0",
+        "category": "learning",
+        "routes_to": "cpp-fundamentals-agent"
+      },
+      {
+        "id": "cpp-review",
+        "file": "commands/cpp-review.md",
+        "version": "3.0.0",
+        "category": "development",
+        "routes_to": "modern-cpp-expert"
+      }
+    ]
+  },
+
+  "hooks": {
+    "file": "hooks/hooks.json",
+    "enabled": true
+  },
+
+  "dependencies": {
+    "required": [],
+    "optional": [
+      {
+        "name": "cmake",
+        "version": ">=3.14",
+        "purpose": "Build system"
+      },
+      {
+        "name": "gtest",
+        "version": ">=1.14.0",
+        "purpose": "Unit testing"
+      },
+      {
+        "name": "clang-format",
+        "version": ">=15",
+        "purpose": "Code formatting"
+      }
+    ]
+  },
+
+  "configuration": {
+    "default_agent": "modern-cpp-expert",
+    "default_model": "claude-sonnet-4-20250514",
+    "fallback_model": "claude-sonnet-4-20250514",
+    "max_retries": 3,
+    "timeout_ms": 30000,
+    "logging": {
+      "level": "INFO",
+      "format": "[%(timestamp)s] [%(component)s] %(message)s"
+    }
+  },
+
+  "integrity": {
+    "checksum_algorithm": "sha256",
+    "last_verified": "2025-12-30",
+    "files_verified": 28
+  }
+}
