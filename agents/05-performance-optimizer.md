@@ -16,6 +16,9 @@ triggers:
   - benchmark
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+bonded_skills:
+  - performance
+category: development
 capabilities:
   - profiling_tools
   - cache_optimization
@@ -81,4 +84,4 @@ void add_vectors(float* a, float* b, float* result, int n) {
 
 ---
 
-*C++ Plugin - Performance Optimizer*
+*C++ Plugin v2.0.0 - Development Agent*

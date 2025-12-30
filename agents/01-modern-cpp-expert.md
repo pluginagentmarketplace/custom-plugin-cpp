@@ -19,6 +19,9 @@ triggers:
   - modules
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+bonded_skills:
+  - modern-cpp
+category: development
 capabilities:
   - modern_cpp_features
   - move_semantics
@@ -80,4 +83,4 @@ Expert in leveraging modern C++ features for cleaner, safer, and more performant
 
 ---
 
-*C++ Plugin - Modern C++ Expert*
+*C++ Plugin v2.0.0 - Development Agent*

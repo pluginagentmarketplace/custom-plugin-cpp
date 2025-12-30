@@ -1,26 +1,87 @@
 {
-  "name": "cpp",
-  "version": "1.0.0",
-  "description": "Modern C++ development with focus on C++11/14/17/20/23, memory management, STL, and performance optimization",
+  "schema_version": "1.0.0",
+  "name": "custom-plugin-cpp",
+  "version": "2.0.0",
+  "description": "Complete C++ Programming System - Learn AND Develop with expert AI agents. Master fundamentals, OOP, STL, and modern C++ while building real projects. Hybrid learning + development workflow.",
   "author": {
     "name": "Plugin Agent Marketplace",
     "email": "pluginagentmarketplace@gmail.com"
   },
   "repository": "https://github.com/pluginagentmarketplace/custom-plugin-cpp",
+  "license": "MIT",
+  "keywords": [
+    "cpp",
+    "c++",
+    "modern-cpp",
+    "stl",
+    "oop",
+    "memory-management",
+    "algorithms",
+    "development",
+    "learning"
+  ],
+  "sasmp_version": "1.3.0",
+  "eqhm_enabled": true,
+  "plugin_type": "hybrid",
   "agents": [
-    "./agents/01-modern-cpp-expert.md",
+    "./agents/cpp-fundamentals-agent.md",
+    "./agents/cpp-oop-agent.md",
     "./agents/02-memory-specialist.md",
     "./agents/03-stl-master.md",
+    "./agents/cpp-algorithms-agent.md",
+    "./agents/01-modern-cpp-expert.md",
     "./agents/04-build-engineer.md",
-    "./agents/05-performance-optimizer.md"
+    "./agents/05-performance-optimizer.md",
+    "./agents/cpp-debugger-agent.md"
   ],
   "skills": [
-    "./skills/modern-cpp/SKILL.md",
+    "./skills/cpp-basics/SKILL.md",
+    "./skills/oop-patterns/SKILL.md",
     "./skills/memory-management/SKILL.md",
     "./skills/stl/SKILL.md",
+    "./skills/algorithms/SKILL.md",
+    "./skills/modern-cpp/SKILL.md",
     "./skills/build-systems/SKILL.md",
-    "./skills/performance/SKILL.md"
+    "./skills/performance/SKILL.md",
+    "./skills/debugging/SKILL.md"
   ],
-  "commands": [],
-  "license": "SEE LICENSE IN LICENSE"
+  "commands": [
+    "./commands/cpp-learn.md",
+    "./commands/cpp-practice.md",
+    "./commands/cpp-debug.md",
+    "./commands/cpp-optimize.md",
+    "./commands/cpp-review.md",
+    "./commands/cpp-new.md"
+  ],
+  "hooks": {
+    "hooks_config_path": "./hooks/hooks.json"
+  },
+  "features": {
+    "total_agents": 9,
+    "total_skills": 9,
+    "total_commands": 6,
+    "learning_agents": 5,
+    "development_agents": 4,
+    "learning_skills": 5,
+    "development_skills": 4,
+    "learning_commands": 2,
+    "development_commands": 4,
+    "topics_covered": [
+      "C++ Fundamentals",
+      "Object-Oriented Programming",
+      "Memory Management",
+      "STL Containers",
+      "Algorithms",
+      "Modern C++ (11/14/17/20/23)",
+      "Build Systems (CMake)",
+      "Performance Optimization",
+      "Debugging"
+    ]
+  },
+  "categories": [
+    "cpp-programming",
+    "systems-programming",
+    "developer-education",
+    "development-tools"
+  ]
 }

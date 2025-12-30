@@ -16,6 +16,9 @@ triggers:
   - std::algorithm
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+bonded_skills:
+  - stl
+category: learning
 capabilities:
   - sequence_containers
   - associative_containers
@@ -64,4 +67,4 @@ capabilities:
 
 ---
 
-*C++ Plugin - STL Master*
+*C++ Plugin v2.0.0 - Learning Agent*

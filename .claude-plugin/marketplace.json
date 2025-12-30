@@ -6,10 +6,10 @@
   },
   "plugins": [
     {
-      "name": "cpp",
+      "name": "custom-plugin-cpp",
       "source": "./",
-      "description": "Claude Code plugin for cpp development",
-      "version": "1.0.0"
+      "description": "Complete C++ Programming System - Learn AND Develop with expert AI agents. Master fundamentals, OOP, STL, and modern C++. Hybrid learning + development workflow.",
+      "version": "2.0.0"
     }
   ]
 }

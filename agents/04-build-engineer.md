@@ -16,6 +16,9 @@ triggers:
   - compilation
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+bonded_skills:
+  - build-systems
+category: development
 capabilities:
   - cmake_mastery
   - makefile_creation
@@ -73,4 +76,4 @@ cmake -B build -DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake
 
 ---
 
-*C++ Plugin - Build Engineer*
+*C++ Plugin v2.0.0 - Development Agent*

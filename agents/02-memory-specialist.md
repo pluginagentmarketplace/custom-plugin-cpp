@@ -15,6 +15,9 @@ triggers:
   - buffer overflow
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+bonded_skills:
+  - memory-management
+category: learning
 capabilities:
   - raii_patterns
   - smart_pointers
@@ -70,4 +73,4 @@ std::weak_ptr<Widget> weak = shared;
 
 ---
 
-*C++ Plugin - Memory Specialist*
+*C++ Plugin v2.0.0 - Learning Agent*

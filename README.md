@@ -1,253 +1,221 @@
-<div align="center">
+# C++ Programming System
 
-<!-- Animated Typing Banner -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Cpp+Assistant;5+Agents+%7C+5+Skills;Claude+Code+Plugin" alt="Cpp Assistant" />
+[![SASMP v1.3.0](https://img.shields.io/badge/SASMP-v1.3.0-blue.svg)](https://github.com/pluginagentmarketplace)
+[![C++](https://img.shields.io/badge/C++-11%2F14%2F17%2F20%2F23-orange?logo=cplusplus)](https://isocpp.org)
+[![Plugin Type](https://img.shields.io/badge/Type-Hybrid-purple.svg)](https://github.com/pluginagentmarketplace)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-<br/>
+**Complete C++ Programming System** - Learn AND Develop with expert AI agents. Master fundamentals, OOP, STL, and modern C++ while building real projects.
 
-<!-- Badge Row 1: Status Badges -->
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://github.com/pluginagentmarketplace/custom-plugin-cpp/releases)
-[![License](https://img.shields.io/badge/License-Custom-yellow?style=for-the-badge)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=for-the-badge)](#)
-[![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-blueviolet?style=for-the-badge)](#)
+## Plugin Type: HYBRID
 
-<!-- Badge Row 2: Content Badges -->
-[![Agents](https://img.shields.io/badge/Agents-5-orange?style=flat-square&logo=robot)](#-agents)
-[![Skills](https://img.shields.io/badge/Skills-5-purple?style=flat-square&logo=lightning)](#-skills)
-[![Commands](https://img.shields.io/badge/Commands-0-green?style=flat-square&logo=terminal)](#-commands)
+This plugin serves **two purposes**:
 
-<br/>
-
-<!-- Quick CTA Row -->
-[📦 **Install Now**](#-quick-start) · [🤖 **Explore Agents**](#-agents) · [📖 **Documentation**](#-documentation) · [⭐ **Star this repo**](https://github.com/pluginagentmarketplace/custom-plugin-cpp)
+| Mode | Purpose | For Who |
+|------|---------|---------|
+| **Learning** | Understand C++ concepts | Beginners, Students |
+| **Development** | Build real C++ projects | Developers, Engineers |
 
 ---
 
-### What is this?
+## Features Overview
 
-> **Cpp Assistant** is a Claude Code plugin with **5 agents** and **5 skills** for cpp development.
-
-</div>
-
----
-
-## 📑 Table of Contents
-
-<details>
-<summary>Click to expand</summary>
-
-- [Quick Start](#-quick-start)
-- [Features](#-features)
-- [Agents](#-agents)
-- [Skills](#-skills)
-- [Commands](#-commands)
-- [Documentation](#-documentation)
-- [Contributing](#-contributing)
-- [License](#-license)
-
-</details>
+| Category | Count | Items |
+|----------|-------|-------|
+| **Agents** | 9 | 5 Learning + 4 Development |
+| **Skills** | 9 | 5 Learning + 4 Development |
+| **Commands** | 6 | 2 Learning + 4 Development |
 
 ---
 
-## 🚀 Quick Start
+## Learning Mode
 
-### Prerequisites
+### Learning Agents
 
-- Claude Code CLI v2.0.27+
-- Active Claude subscription
+| Agent | Expertise |
+|-------|-----------|
+| `cpp-fundamentals-agent` | Variables, types, control flow, functions |
+| `cpp-oop-agent` | Classes, inheritance, polymorphism, patterns |
+| `memory-specialist` | Pointers, RAII, smart pointers |
+| `stl-master` | Containers, algorithms, iterators |
+| `cpp-algorithms-agent` | Complexity, sorting, searching, graphs |
 
-### Installation (Choose One)
-
-<details open>
-<summary><strong>Option 1: From Marketplace (Recommended)</strong></summary>
+### Learning Commands
 
 ```bash
-# Step 1️⃣ Add the marketplace
-/plugin add marketplace pluginagentmarketplace/custom-plugin-cpp
-
-# Step 2️⃣ Install the plugin
-/plugin install cpp@pluginagentmarketplace-cpp
-
-# Step 3️⃣ Restart Claude Code
-# Close and reopen your terminal/IDE
+/cpp-learn ownership      # Learn about memory ownership
+/cpp-learn oop            # Object-oriented programming
+/cpp-practice medium stl  # STL exercises
 ```
 
-</details>
+### Learning Skills
 
-<details>
-<summary><strong>Option 2: Local Installation</strong></summary>
-
-```bash
-# Clone the repository
-git clone https://github.com/pluginagentmarketplace/custom-plugin-cpp.git
-cd custom-plugin-cpp
-
-# Load locally
-/plugin load .
-
-# Restart Claude Code
-```
-
-</details>
-
-### ✅ Verify Installation
-
-After restart, you should see these agents:
-
-```
-cpp:04-build-engineer
-cpp:05-performance-optimizer
-cpp:02-memory-specialist
-cpp:01-modern-cpp-expert
-cpp:03-stl-master
-```
+- **cpp-basics** - C++ fundamentals
+- **oop-patterns** - OOP and design patterns
+- **memory-management** - Memory safety
+- **stl** - Standard Template Library
+- **algorithms** - Data structures and algorithms
 
 ---
 
-## ✨ Features
+## Development Mode
 
-| Feature | Description |
-|---------|-------------|
-| 🤖 **5 Agents** | Specialized AI agents for cpp tasks |
-| 🛠️ **5 Skills** | Reusable capabilities with Golden Format |
-| ⌨️ **0 Commands** | Quick slash commands |
-| 🔄 **SASMP v1.3.0** | Full protocol compliance |
+### Development Agents
 
----
+| Agent | Purpose |
+|-------|---------|
+| `modern-cpp-expert` | C++11/14/17/20/23 features |
+| `build-engineer` | CMake, Make, Ninja, CI/CD |
+| `performance-optimizer` | Profiling, SIMD, threading |
+| `cpp-debugger-agent` | GDB, LLDB, sanitizers |
 
-## 🤖 Agents
-
-### 5 Specialized Agents
-
-| # | Agent | Purpose |
-|---|-------|---------|
-| 1 | **04-build-engineer** | Expert in C++ build systems including CMake, Make, Ninja, an |
-| 2 | **05-performance-optimizer** | Expert in C++ performance optimization including profiling,  |
-| 3 | **02-memory-specialist** | Expert in C++ memory management including RAII, smart pointe |
-| 4 | **01-modern-cpp-expert** | Master modern C++ standards (C++11/14/17/20/23) including mo |
-| 5 | **03-stl-master** | Master of the C++ Standard Template Library including contai |
-
----
-
-## 🛠️ Skills
-
-### Available Skills
-
-| Skill | Description | Invoke |
-|-------|-------------|--------|
-| `stl` | Master the C++ Standard Template Library - containers, algor | `Skill("cpp:stl")` |
-| `modern-cpp` | Modern C++ development with C++11 through C++23 features | `Skill("cpp:modern-cpp")` |
-| `build-systems` | C++ build systems including CMake, Make, Ninja, and package  | `Skill("cpp:build-systems")` |
-| `memory-management` | Safe and efficient C++ memory management with RAII, smart po | `Skill("cpp:memory-management")` |
-| `performance` | C++ performance optimization including profiling, SIMD, cach | `Skill("cpp:performance")` |
-
----
-
-## ⌨️ Commands
+### Development Commands
 
 | Command | Description |
 |---------|-------------|
+| `/cpp-new` | Create new project with templates |
+| `/cpp-debug` | Debug with GDB/LLDB |
+| `/cpp-optimize` | Performance profiling |
+| `/cpp-review` | Code review |
+
+### Quick Start: Development
+
+```bash
+# Create a new CLI project
+/cpp-new my-tool cli
+
+# Debug a crash
+/cpp-debug segfault
+
+# Optimize performance
+/cpp-optimize profile
+
+# Review code
+/cpp-review class
+```
 
 ---
 
-## 📚 Documentation
-
-| Document | Description |
-|----------|-------------|
-| [CHANGELOG.md](CHANGELOG.md) | Version history |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
-| [LICENSE](LICENSE) | License information |
-
----
-
-## 📁 Project Structure
-
-<details>
-<summary>Click to expand</summary>
+## Plugin Structure
 
 ```
 custom-plugin-cpp/
-├── 📁 .claude-plugin/
-│   ├── plugin.json
-│   └── marketplace.json
-├── 📁 agents/              # 5 agents
-├── 📁 skills/              # 5 skills (Golden Format)
-├── 📁 commands/            # 0 commands
-├── 📁 hooks/
-├── 📄 README.md
-├── 📄 CHANGELOG.md
-└── 📄 LICENSE
+├── agents/
+│   ├── cpp-fundamentals-agent.md   # Learning
+│   ├── cpp-oop-agent.md            # Learning
+│   ├── 02-memory-specialist.md     # Learning
+│   ├── 03-stl-master.md            # Learning
+│   ├── cpp-algorithms-agent.md     # Learning
+│   ├── 01-modern-cpp-expert.md     # Development
+│   ├── 04-build-engineer.md        # Development
+│   ├── 05-performance-optimizer.md # Development
+│   └── cpp-debugger-agent.md       # Development
+├── skills/
+│   ├── cpp-basics/                 # Learning
+│   ├── oop-patterns/               # Learning
+│   ├── memory-management/          # Learning
+│   ├── stl/                        # Learning
+│   ├── algorithms/                 # Learning
+│   ├── modern-cpp/                 # Development
+│   ├── build-systems/              # Development
+│   ├── performance/                # Development
+│   └── debugging/                  # Development
+├── commands/
+│   ├── cpp-learn.md                # Learning
+│   ├── cpp-practice.md             # Learning
+│   ├── cpp-debug.md                # Development
+│   ├── cpp-optimize.md             # Development
+│   ├── cpp-review.md               # Development
+│   └── cpp-new.md                  # Development
+├── hooks/
+│   └── hooks.json
+└── .claude-plugin/
+    ├── plugin.json
+    └── marketplace.json
 ```
 
-</details>
+---
+
+## Topics Covered
+
+### Core Concepts (Learning)
+- Variables, Data Types, Operators
+- Control Flow, Functions
+- Classes, Inheritance, Polymorphism
+- Pointers, References, Smart Pointers
+- STL Containers and Algorithms
+- Algorithm Complexity Analysis
+
+### Development Skills
+- Modern C++ (C++11 through C++23)
+- CMake and Build Systems
+- Profiling and Optimization
+- Debugging with GDB/LLDB
+- Code Review Best Practices
 
 ---
 
-## 📅 Metadata
+## Installation
 
-| Field | Value |
-|-------|-------|
-| **Version** | 1.0.0 |
-| **Last Updated** | 2025-12-29 |
-| **Status** | Production Ready |
-| **SASMP** | v1.3.0 |
-| **Agents** | 5 |
-| **Skills** | 5 |
-| **Commands** | 0 |
+```bash
+# Via Claude Code plugin marketplace
+/plugin install custom-plugin-cpp
+```
 
 ---
 
-## 🤝 Contributing
+## Usage Examples
 
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md).
+### Learning Flow
+```bash
+# 1. Start learning
+/cpp-learn fundamentals
 
-1. Fork the repository
-2. Create your feature branch
-3. Follow the Golden Format for new skills
-4. Submit a pull request
+# 2. Practice with exercises
+/cpp-practice easy
 
----
+# 3. Move to OOP
+/cpp-learn oop
+```
 
-## ⚠️ Security
+### Development Flow
+```bash
+# 1. Create project
+/cpp-new my-app cli
 
-> **Important:** This repository contains third-party code and dependencies.
->
-> - ✅ Always review code before using in production
-> - ✅ Check dependencies for known vulnerabilities
-> - ✅ Follow security best practices
-> - ✅ Report security issues privately via [Issues](../../issues)
+# 2. Write code, then review
+/cpp-review
 
----
+# 3. Debug issues
+/cpp-debug
 
-## 📝 License
-
-Copyright © 2025 **Dr. Umit Kacar** & **Muhsin Elcicek**
-
-Custom License - See [LICENSE](LICENSE) for details.
-
----
-
-## 👥 Contributors
-
-<table>
-<tr>
-<td align="center">
-<strong>Dr. Umit Kacar</strong><br/>
-Senior AI Researcher & Engineer
-</td>
-<td align="center">
-<strong>Muhsin Elcicek</strong><br/>
-Senior Software Architect
-</td>
-</tr>
-</table>
+# 4. Optimize performance
+/cpp-optimize
+```
 
 ---
 
-<div align="center">
+## Version History
 
-**Made with ❤️ for the Claude Code Community**
+| Version | Date | Type | Changes |
+|---------|------|------|---------|
+| 2.0.0 | 2025-12-29 | Hybrid | Merged cpp + cpp-developer, added 4 agents, 4 skills, 6 commands |
+| 1.0.0 | 2025-12-29 | Development | Initial version with 5 agents, 5 skills |
 
-[![GitHub](https://img.shields.io/badge/GitHub-pluginagentmarketplace-black?style=for-the-badge&logo=github)](https://github.com/pluginagentmarketplace)
+---
 
-</div>
+## Related Resources
+
+- [C++ Reference](https://en.cppreference.com/)
+- [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/)
+- [Learn C++](https://www.learncpp.com/)
+
+---
+
+## License
+
+MIT License - See [LICENSE](LICENSE) for details.
+
+## Author
+
+Plugin Agent Marketplace - [pluginagentmarketplace@gmail.com](mailto:pluginagentmarketplace@gmail.com)
