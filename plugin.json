@@ -79,8 +79,8 @@
   },
 
   "skills": {
-    "count": 13,
-    "note": "Includes testing skill bonded to cpp-debugger-agent",
+    "count": 12,
+    "note": "All skills with valid agent bonds",
     "definitions": [
       {
         "id": "cpp-basics",
