@@ -1,3 +1,198 @@
 {
-  "hooks": {}
+  "$schema": "https://sasmp.org/schemas/hooks/v1.3.0",
+  "version": "3.0.0",
+  "sasmp_version": "1.3.0",
+  "description": "Production-grade hooks for C++ plugin lifecycle management",
+
+  "hooks": {
+    "pre_activation": {
+      "enabled": true,
+      "description": "Validates environment before agent activation",
+      "actions": [
+        {
+          "id": "check_cpp_compiler",
+          "type": "shell",
+          "command": "which g++ || which clang++",
+          "on_failure": "warn",
+          "message": "No C++ compiler found. Some features may be limited."
+        },
+        {
+          "id": "check_cmake",
+          "type": "shell",
+          "command": "which cmake",
+          "on_failure": "warn",
+          "message": "CMake not found. Build commands will be limited."
+        }
+      ]
+    },
+
+    "post_activation": {
+      "enabled": true,
+      "description": "Setup after successful agent activation",
+      "actions": [
+        {
+          "id": "log_activation",
+          "type": "log",
+          "level": "INFO",
+          "message": "C++ plugin activated successfully"
+        }
+      ]
+    },
+
+    "pre_skill_load": {
+      "enabled": true,
+      "description": "Validates skill before loading",
+      "actions": [
+        {
+          "id": "validate_skill_schema",
+          "type": "validate",
+          "schema": "sasmp_skill_v1.3.0",
+          "on_failure": "error"
+        }
+      ]
+    },
+
+    "post_skill_load": {
+      "enabled": true,
+      "description": "Actions after skill is loaded",
+      "actions": [
+        {
+          "id": "log_skill_load",
+          "type": "log",
+          "level": "DEBUG",
+          "message": "Skill loaded: {{skill_id}}"
+        }
+      ]
+    },
+
+    "pre_command_execute": {
+      "enabled": true,
+      "description": "Validates command input before execution",
+      "actions": [
+        {
+          "id": "validate_input_schema",
+          "type": "validate",
+          "schema": "command_input",
+          "on_failure": "error"
+        },
+        {
+          "id": "log_command",
+          "type": "log",
+          "level": "INFO",
+          "message": "Executing command: {{command_id}}"
+        }
+      ]
+    },
+
+    "post_command_execute": {
+      "enabled": true,
+      "description": "Actions after command execution",
+      "actions": [
+        {
+          "id": "log_result",
+          "type": "log",
+          "level": "INFO",
+          "message": "Command completed: {{command_id}} (exit_code: {{exit_code}})"
+        },
+        {
+          "id": "collect_metrics",
+          "type": "metric",
+          "name": "command_execution",
+          "labels": {
+            "command": "{{command_id}}",
+            "status": "{{status}}"
+          }
+        }
+      ]
+    },
+
+    "on_error": {
+      "enabled": true,
+      "description": "Global error handling",
+      "actions": [
+        {
+          "id": "log_error",
+          "type": "log",
+          "level": "ERROR",
+          "message": "Error in {{component}}: {{error_message}}"
+        },
+        {
+          "id": "retry_with_backoff",
+          "type": "retry",
+          "max_attempts": 3,
+          "initial_delay_ms": 500,
+          "max_delay_ms": 8000,
+          "backoff": "exponential",
+          "jitter": true,
+          "condition": "{{error_type}} == 'transient'"
+        }
+      ]
+    },
+
+    "on_agent_switch": {
+      "enabled": true,
+      "description": "Handles transitions between agents",
+      "actions": [
+        {
+          "id": "preserve_context",
+          "type": "context",
+          "operation": "save",
+          "keys": ["current_file", "current_task", "conversation_history"]
+        },
+        {
+          "id": "log_switch",
+          "type": "log",
+          "level": "INFO",
+          "message": "Agent switch: {{from_agent}} -> {{to_agent}}"
+        }
+      ]
+    }
+  },
+
+  "event_handlers": {
+    "compilation_error": {
+      "trigger": "error.type == 'compilation'",
+      "actions": [
+        {
+          "type": "suggest_agent",
+          "agent": "build-engineer",
+          "reason": "Build system expertise needed"
+        }
+      ]
+    },
+    "memory_error": {
+      "trigger": "error.type == 'memory' || error.message.contains('segfault')",
+      "actions": [
+        {
+          "type": "suggest_agent",
+          "agent": "memory-specialist",
+          "reason": "Memory debugging expertise needed"
+        }
+      ]
+    },
+    "performance_issue": {
+      "trigger": "metrics.latency > threshold || user.mentions('slow')",
+      "actions": [
+        {
+          "type": "suggest_agent",
+          "agent": "performance-optimizer",
+          "reason": "Performance optimization expertise needed"
+        }
+      ]
+    }
+  },
+
+  "configuration": {
+    "logging": {
+      "enabled": true,
+      "level": "INFO",
+      "format": "[%(timestamp)s] [HOOK] %(message)s",
+      "output": "stderr"
+    },
+    "metrics": {
+      "enabled": true,
+      "endpoint": "internal",
+      "flush_interval_ms": 5000
+    }
+  }
 }
