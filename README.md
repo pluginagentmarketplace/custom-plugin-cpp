@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Typing Banner -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=C%2B%2B+Programming+System;9+Agents+%7C+12+Skills;Claude+Code+Plugin" alt="C++ Programming System" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=C%2B%2B+Programming+System;9+Agents+%7C+9+Skills;Claude+Code+Plugin" alt="C++ Programming System" />
 
 <br/>
 
@@ -13,7 +13,7 @@
 
 <!-- Badge Row 2: Content Badges -->
 [![Agents](https://img.shields.io/badge/Agents-9-orange?style=flat-square&logo=robot)](#-agents)
-[![Skills](https://img.shields.io/badge/Skills-12-purple?style=flat-square&logo=lightning)](#-skills)
+[![Skills](https://img.shields.io/badge/Skills-9-purple?style=flat-square&logo=lightning)](#-skills)
 [![Commands](https://img.shields.io/badge/Commands-6-green?style=flat-square&logo=terminal)](#-commands)
 
 <br/>
@@ -25,7 +25,7 @@
 
 ### What is this?
 
-> **C++ Programming System** is a Claude Code plugin with **9 agents** and **12 skills** for C++ development. Learn AND Develop with expert AI agents - master fundamentals, OOP, STL, and modern C++ while building real projects.
+> **C++ Programming System** is a Claude Code plugin with **9 agents** and **9 skills** for C++ development. Learn AND Develop with expert AI agents - master fundamentals, OOP, STL, and modern C++ while building real projects.
 
 </div>
 
@@ -113,7 +113,7 @@ custom-plugin-cpp:cpp-oop-agent
 | Feature | Description |
 |---------|-------------|
 | 🤖 **9 Agents** | Specialized AI agents for C++ tasks |
-| 🛠️ **12 Skills** | Reusable capabilities with Golden Format |
+| 🛠️ **9 Skills** | Reusable capabilities with Golden Format |
 | ⌨️ **6 Commands** | Quick slash commands |
 | 🔄 **SASMP v1.3.0** | Full protocol compliance |
 | 🎓 **Hybrid Mode** | Learn AND Develop with expert agents |
@@ -193,7 +193,7 @@ custom-plugin-cpp/
 │   ├── plugin.json
 │   └── marketplace.json
 ├── 📁 agents/              # 9 agents
-├── 📁 skills/              # 12 skills (Golden Format)
+├── 📁 skills/              # 9 skills (Golden Format)
 ├── 📁 commands/            # 6 commands
 ├── 📁 hooks/
 ├── 📄 README.md
@@ -214,7 +214,7 @@ custom-plugin-cpp/
 | **Status** | Production Ready |
 | **SASMP** | v1.3.0 |
 | **Agents** | 9 |
-| **Skills** | 12 |
+| **Skills** | 9 |
 | **Commands** | 6 |
 
 ---
