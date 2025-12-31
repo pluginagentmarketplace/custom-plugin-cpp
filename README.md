@@ -1,267 +1,275 @@
-# C++ Programming System
+<div align="center">
 
-[![SASMP v1.3.0](https://img.shields.io/badge/SASMP-v1.3.0-blue.svg)](https://github.com/pluginagentmarketplace)
-[![EQHM Compliant](https://img.shields.io/badge/EQHM-Compliant-green.svg)](https://github.com/pluginagentmarketplace)
-[![Version](https://img.shields.io/badge/Version-3.0.0-purple.svg)](CHANGELOG.md)
-[![C++](https://img.shields.io/badge/C++-11%2F14%2F17%2F20%2F23-orange?logo=cplusplus)](https://isocpp.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<!-- Animated Typing Banner -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=C%2B%2B+Programming+System;9+Agents+%7C+12+Skills;Claude+Code+Plugin" alt="C++ Programming System" />
 
-**Production-Grade C++ Development Plugin** - Complete agent-skill architecture for learning and professional development.
+<br/>
 
----
+<!-- Badge Row 1: Status Badges -->
+[![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=for-the-badge)](https://github.com/pluginagentmarketplace/custom-plugin-cpp/releases)
+[![License](https://img.shields.io/badge/License-Custom-yellow?style=for-the-badge)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=for-the-badge)](#)
+[![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-blueviolet?style=for-the-badge)](#)
 
-## Plugin Overview
+<!-- Badge Row 2: Content Badges -->
+[![Agents](https://img.shields.io/badge/Agents-9-orange?style=flat-square&logo=robot)](#-agents)
+[![Skills](https://img.shields.io/badge/Skills-12-purple?style=flat-square&logo=lightning)](#-skills)
+[![Commands](https://img.shields.io/badge/Commands-6-green?style=flat-square&logo=terminal)](#-commands)
 
-| Metric | Count | Status |
-|--------|-------|--------|
-| **Agents** | 9 | Production-Grade |
-| **Skills** | 12 | Production-Grade |
-| **Commands** | 6 | Production-Grade |
-| **SASMP Version** | 1.3.0 | Compliant |
-| **Plugin Version** | 3.0.0 | Current |
+<br/>
 
----
-
-## Architecture
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    COMMAND LAYER                            │
-│  /cpp-new  /cpp-learn  /cpp-debug  /cpp-optimize           │
-│  /cpp-practice  /cpp-review                                 │
-└─────────────────────────────┬───────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    AGENT LAYER (9)                          │
-├─────────────────────────────────────────────────────────────┤
-│  modern-cpp-expert    memory-specialist    stl-master       │
-│  build-engineer       performance-optimizer                 │
-│  cpp-fundamentals     cpp-oop-agent       cpp-algorithms    │
-│  cpp-debugger-agent                                         │
-└─────────────────────────────┬───────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    SKILL LAYER (12)                         │
-├─────────────────────────────────────────────────────────────┤
-│  cpp-basics    oop-patterns    memory-management    stl     │
-│  algorithms    modern-cpp      build-systems                │
-│  performance   debugging       concurrency                  │
-│  templates     testing                                      │
-└─────────────────────────────────────────────────────────────┘
-```
+<!-- Quick CTA Row -->
+[📦 **Install Now**](#-quick-start) · [🤖 **Explore Agents**](#-agents) · [📖 **Documentation**](#-documentation) · [⭐ **Star this repo**](https://github.com/pluginagentmarketplace/custom-plugin-cpp)
 
 ---
 
-## Agents
+### What is this?
 
-### Learning Agents
+> **C++ Programming System** is a Claude Code plugin with **9 agents** and **12 skills** for C++ development. Learn AND Develop with expert AI agents - master fundamentals, OOP, STL, and modern C++ while building real projects.
 
-| Agent | Primary Skill | Expertise |
-|-------|---------------|-----------|
-| `cpp-fundamentals-agent` | cpp-basics | Variables, types, control flow, functions |
-| `cpp-oop-agent` | oop-patterns | Classes, inheritance, polymorphism, SOLID |
-| `cpp-algorithms-agent` | algorithms | Complexity, sorting, graphs, DP |
-
-### Development Agents
-
-| Agent | Primary Skills | Expertise |
-|-------|----------------|-----------|
-| `modern-cpp-expert` | modern-cpp, templates, concurrency | C++11-23, metaprogramming |
-| `memory-specialist` | memory-management | RAII, smart pointers, allocation |
-| `stl-master` | stl | Containers, algorithms, iterators |
-| `build-engineer` | build-systems | CMake, Conan, vcpkg, CI/CD |
-| `performance-optimizer` | performance | Profiling, SIMD, cache optimization |
-| `cpp-debugger-agent` | debugging, testing | GDB, sanitizers, unit testing |
+</div>
 
 ---
 
-## Commands
+## 📑 Table of Contents
 
-| Command | Routes To | Description |
-|---------|-----------|-------------|
-| `/cpp-new <name> <type>` | build-engineer | Create new C++ project |
-| `/cpp-learn <topic>` | topic-based routing | Interactive learning |
-| `/cpp-practice <difficulty>` | difficulty-based routing | Coding exercises |
-| `/cpp-debug <issue>` | cpp-debugger-agent | Debug assistance |
-| `/cpp-optimize <focus>` | performance-optimizer | Performance tuning |
-| `/cpp-review <focus>` | modern-cpp-expert | Code review |
+<details>
+<summary>Click to expand</summary>
 
-### Project Templates
+- [Quick Start](#-quick-start)
+- [Features](#-features)
+- [Agents](#-agents)
+- [Skills](#-skills)
+- [Commands](#-commands)
+- [Documentation](#-documentation)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+</details>
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Claude Code CLI v2.0.27+
+- Active Claude subscription
+
+### Installation (Choose One)
+
+<details open>
+<summary><strong>Option 1: From Marketplace (Recommended)</strong></summary>
 
 ```bash
-/cpp-new my-app cli      # Command-line application
-/cpp-new my-lib lib      # Static/shared library
-/cpp-new my-app app      # GUI application
-/cpp-new my-test test    # Test project
-/cpp-new my-proj full    # Full project structure
+# Step 1️⃣ Add the marketplace
+/plugin add marketplace pluginagentmarketplace/custom-plugin-cpp
+
+# Step 2️⃣ Install the plugin
+/plugin install custom-plugin-cpp@pluginagentmarketplace-cpp
+
+# Step 3️⃣ Restart Claude Code
+# Close and reopen your terminal/IDE
 ```
 
----
+</details>
 
-## Skills
-
-### Core Skills
-
-| Skill | Agent | Category |
-|-------|-------|----------|
-| `cpp-basics` | cpp-fundamentals-agent | Fundamentals |
-| `oop-patterns` | cpp-oop-agent | Design Patterns |
-| `memory-management` | memory-specialist | Core |
-| `stl` | stl-master | Standard Library |
-| `algorithms` | cpp-algorithms-agent | Algorithms |
-
-### Advanced Skills
-
-| Skill | Agent | Category |
-|-------|-------|----------|
-| `modern-cpp` | modern-cpp-expert | Modern Features |
-| `build-systems` | build-engineer | Tooling |
-| `performance` | performance-optimizer | Optimization |
-| `debugging` | cpp-debugger-agent | Tooling |
-| `concurrency` | modern-cpp-expert | Advanced |
-| `templates` | modern-cpp-expert | Advanced |
-| `testing` | cpp-debugger-agent | QA |
-
----
-
-## Production-Grade Features
-
-### SASMP v1.3.0 Compliance
-
-- Type-safe input/output schemas
-- Activation triggers (keywords + patterns)
-- Error handling with exponential backoff
-- Fallback agent configuration
-- Observability hooks
-
-### Error Handling
-
-```yaml
-error_handling:
-  retry_logic:
-    max_attempts: 3
-    backoff: exponential
-    initial_delay_ms: 500
-    max_delay_ms: 8000
-    jitter: true
-```
-
-### Observability
-
-- Structured logging
-- Metrics collection
-- Distributed tracing support
-
----
-
-## Quick Start
-
-### Learning Flow
+<details>
+<summary><strong>Option 2: Local Installation</strong></summary>
 
 ```bash
-# Start with fundamentals
-/cpp-learn fundamentals
+# Clone the repository
+git clone https://github.com/pluginagentmarketplace/custom-plugin-cpp.git
+cd custom-plugin-cpp
 
-# Practice with exercises
-/cpp-practice easy
+# Load locally
+/plugin load .
 
-# Progress to OOP
-/cpp-learn oop
-
-# Challenge yourself
-/cpp-practice hard algorithms
+# Restart Claude Code
 ```
 
-### Development Flow
+</details>
 
-```bash
-# Create project
-/cpp-new my-service cli
+### ✅ Verify Installation
 
-# Write code...
+After restart, you should see these agents:
 
-# Review
-/cpp-review
-
-# Debug if needed
-/cpp-debug
-
-# Optimize
-/cpp-optimize profile
+```
+custom-plugin-cpp:01-modern-cpp-expert
+custom-plugin-cpp:02-memory-specialist
+custom-plugin-cpp:03-stl-master
+custom-plugin-cpp:04-build-engineer
+custom-plugin-cpp:05-performance-optimizer
+custom-plugin-cpp:cpp-algorithms-agent
+custom-plugin-cpp:cpp-debugger-agent
+custom-plugin-cpp:cpp-fundamentals-agent
+custom-plugin-cpp:cpp-oop-agent
 ```
 
 ---
 
-## File Structure
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🤖 **9 Agents** | Specialized AI agents for C++ tasks |
+| 🛠️ **12 Skills** | Reusable capabilities with Golden Format |
+| ⌨️ **6 Commands** | Quick slash commands |
+| 🔄 **SASMP v1.3.0** | Full protocol compliance |
+| 🎓 **Hybrid Mode** | Learn AND Develop with expert agents |
+
+---
+
+## 🤖 Agents
+
+### 9 Specialized Agents
+
+| # | Agent | Purpose |
+|---|-------|---------|
+| 1 | **01-modern-cpp-expert** | Modern C++ (11/14/17/20/23) features and best practices |
+| 2 | **02-memory-specialist** | Memory management, smart pointers, RAII patterns |
+| 3 | **03-stl-master** | STL containers, algorithms, iterators |
+| 4 | **04-build-engineer** | CMake, build systems, project configuration |
+| 5 | **05-performance-optimizer** | Performance tuning, profiling, optimization |
+| 6 | **cpp-algorithms-agent** | Data structures and algorithm implementation |
+| 7 | **cpp-debugger-agent** | Debugging techniques and error resolution |
+| 8 | **cpp-fundamentals-agent** | C++ basics, syntax, control flow |
+| 9 | **cpp-oop-agent** | Object-oriented programming patterns |
+
+---
+
+## 🛠️ Skills
+
+### Available Skills
+
+| Skill | Description | Invoke |
+|-------|-------------|--------|
+| `algorithms` | Algorithm design and implementation | `Skill("custom-plugin-cpp:algorithms")` |
+| `build-systems` | CMake and build configuration | `Skill("custom-plugin-cpp:build-systems")` |
+| `concurrency` | Multi-threading and parallel programming | `Skill("custom-plugin-cpp:concurrency")` |
+| `cpp-basics` | C++ fundamentals and syntax | `Skill("custom-plugin-cpp:cpp-basics")` |
+| `debugging` | Debugging techniques and tools | `Skill("custom-plugin-cpp:debugging")` |
+| `memory-management` | Smart pointers and RAII | `Skill("custom-plugin-cpp:memory-management")` |
+| `modern-cpp` | C++11/14/17/20/23 features | `Skill("custom-plugin-cpp:modern-cpp")` |
+| `oop-patterns` | OOP design patterns | `Skill("custom-plugin-cpp:oop-patterns")` |
+| `performance` | Optimization and profiling | `Skill("custom-plugin-cpp:performance")` |
+| `stl` | Standard Template Library | `Skill("custom-plugin-cpp:stl")` |
+| `templates` | Template metaprogramming | `Skill("custom-plugin-cpp:templates")` |
+| `testing` | Unit testing and TDD | `Skill("custom-plugin-cpp:testing")` |
+
+---
+
+## ⌨️ Commands
+
+| Command | Description |
+|---------|-------------|
+| `/cpp-debug` | Debug C++ code and resolve errors |
+| `/cpp-learn` | Learn C++ topics with structured lessons |
+| `/cpp-new` | Create new C++ project with templates |
+| `/cpp-optimize` | Optimize C++ code for performance |
+| `/cpp-practice` | Practice C++ with coding exercises |
+| `/cpp-review` | Code review and best practices check |
+
+---
+
+## 📚 Documentation
+
+| Document | Description |
+|----------|-------------|
+| [CHANGELOG.md](CHANGELOG.md) | Version history |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
+| [LICENSE](LICENSE) | License information |
+
+---
+
+## 📁 Project Structure
+
+<details>
+<summary>Click to expand</summary>
 
 ```
 custom-plugin-cpp/
-├── plugin.json              # Plugin manifest
-├── ARCHITECTURE.md          # Dependency graph
-├── CHANGELOG.md             # Version history
-├── agents/                  # 9 agent definitions
-│   ├── 01-modern-cpp-expert.md
-│   ├── 02-memory-specialist.md
-│   ├── 03-stl-master.md
-│   ├── 04-build-engineer.md
-│   ├── 05-performance-optimizer.md
-│   ├── cpp-fundamentals-agent.md
-│   ├── cpp-oop-agent.md
-│   ├── cpp-algorithms-agent.md
-│   └── cpp-debugger-agent.md
-├── skills/                  # 12 skill definitions
-│   ├── cpp-basics/
-│   ├── oop-patterns/
-│   ├── memory-management/
-│   ├── stl/
-│   ├── algorithms/
-│   ├── modern-cpp/
-│   ├── build-systems/
-│   ├── performance/
-│   ├── debugging/
-│   ├── concurrency/
-│   ├── templates/
-│   └── testing/
-├── commands/                # 6 command definitions
-│   ├── cpp-new.md
-│   ├── cpp-learn.md
-│   ├── cpp-practice.md
-│   ├── cpp-debug.md
-│   ├── cpp-optimize.md
-│   └── cpp-review.md
-└── hooks/
-    └── hooks.json           # Lifecycle hooks
+├── 📁 .claude-plugin/
+│   ├── plugin.json
+│   └── marketplace.json
+├── 📁 agents/              # 9 agents
+├── 📁 skills/              # 12 skills (Golden Format)
+├── 📁 commands/            # 6 commands
+├── 📁 hooks/
+├── 📄 README.md
+├── 📄 CHANGELOG.md
+└── 📄 LICENSE
 ```
 
----
-
-## Version History
-
-| Version | Date | Changes |
-|---------|------|---------|
-| **3.0.0** | 2025-12-30 | Production-grade upgrade, EQHM compliance |
-| 2.0.0 | 2025-12-29 | Hybrid mode, merged plugins |
-| 1.0.0 | 2025-12-29 | Initial release |
-
-See [CHANGELOG.md](CHANGELOG.md) for detailed history.
+</details>
 
 ---
 
-## Resources
+## 📅 Metadata
 
-- [C++ Reference](https://en.cppreference.com/)
-- [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/)
-- [Learn C++](https://www.learncpp.com/)
-- [ARCHITECTURE.md](ARCHITECTURE.md) - Plugin architecture details
+| Field | Value |
+|-------|-------|
+| **Version** | 2.0.0 |
+| **Last Updated** | 2025-12-31 |
+| **Status** | Production Ready |
+| **SASMP** | v1.3.0 |
+| **Agents** | 9 |
+| **Skills** | 12 |
+| **Commands** | 6 |
 
 ---
 
-## License
+## 🤝 Contributing
 
-MIT License - See [LICENSE](LICENSE) for details.
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md).
+
+1. Fork the repository
+2. Create your feature branch
+3. Follow the Golden Format for new skills
+4. Submit a pull request
 
 ---
 
-**Maintained by:** Dr. Umit Kacar & Muhsin Elcicek
+## ⚠️ Security
+
+> **Important:** This repository contains third-party code and dependencies.
+>
+> - ✅ Always review code before using in production
+> - ✅ Check dependencies for known vulnerabilities
+> - ✅ Follow security best practices
+> - ✅ Report security issues privately via [Issues](../../issues)
+
+---
+
+## 📝 License
+
+Copyright © 2025 **Dr. Umit Kacar** & **Muhsin Elcicek**
+
+Custom License - See [LICENSE](LICENSE) for details.
+
+---
+
+## 👥 Contributors
+
+<table>
+<tr>
+<td align="center">
+<strong>Dr. Umit Kacar</strong><br/>
+Senior AI Researcher & Engineer
+</td>
+<td align="center">
+<strong>Muhsin Elcicek</strong><br/>
+Senior Software Architect
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+**Made with ❤️ for the Claude Code Community**
+
+[![GitHub](https://img.shields.io/badge/GitHub-pluginagentmarketplace-black?style=for-the-badge&logo=github)](https://github.com/pluginagentmarketplace)
+
+</div>
