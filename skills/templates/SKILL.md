@@ -23,7 +23,7 @@ skill_version: "3.0.0"
 # ─────────────────────────────────────────────────────────────────────────────
 # BONDING
 # ─────────────────────────────────────────────────────────────────────────────
-bonded_agent: modern-cpp-expert
+bonded_agent: 01-modern-cpp-expert
 bond_type: PRIMARY_BOND
 category: development
 

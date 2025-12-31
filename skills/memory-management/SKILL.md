@@ -23,7 +23,7 @@ skill_version: "3.0.0"
 # ─────────────────────────────────────────────────────────────────────────────
 # BONDING
 # ─────────────────────────────────────────────────────────────────────────────
-bonded_agent: memory-specialist
+bonded_agent: 02-memory-specialist
 bond_type: PRIMARY_BOND
 category: learning
 

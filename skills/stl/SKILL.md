@@ -23,7 +23,7 @@ skill_version: "3.0.0"
 # ─────────────────────────────────────────────────────────────────────────────
 # BONDING
 # ─────────────────────────────────────────────────────────────────────────────
-bonded_agent: stl-master
+bonded_agent: 03-stl-master
 bond_type: PRIMARY_BOND
 category: learning
 

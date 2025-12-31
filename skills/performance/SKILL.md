@@ -23,7 +23,7 @@ skill_version: "3.0.0"
 # ─────────────────────────────────────────────────────────────────────────────
 # BONDING
 # ─────────────────────────────────────────────────────────────────────────────
-bonded_agent: performance-optimizer
+bonded_agent: 05-performance-optimizer
 bond_type: PRIMARY_BOND
 category: development
 

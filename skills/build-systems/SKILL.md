@@ -22,7 +22,7 @@ skill_version: "3.0.0"
 # ─────────────────────────────────────────────────────────────────────────────
 # BONDING
 # ─────────────────────────────────────────────────────────────────────────────
-bonded_agent: build-engineer
+bonded_agent: 04-build-engineer
 bond_type: PRIMARY_BOND
 category: development
 
