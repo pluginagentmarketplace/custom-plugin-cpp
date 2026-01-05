@@ -63,7 +63,7 @@
 
 ```bash
 # Step 1️⃣ Add the marketplace
-/plugin add marketplace pluginagentmarketplace/custom-plugin-cpp
+/plugin marketplace add pluginagentmarketplace/custom-plugin-cpp
 
 # Step 2️⃣ Install the plugin
 /plugin install custom-plugin-cpp@pluginagentmarketplace-cpp

@@ -53,9 +53,6 @@
     "./commands/cpp-review.md",
     "./commands/cpp-new.md"
   ],
-  "hooks": {
-    "hooks_config_path": "./hooks/hooks.json"
-  },
   "features": {
     "total_agents": 9,
     "total_skills": 9,
